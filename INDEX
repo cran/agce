@@ -1,0 +1,16 @@
+Bt20                     Effect of DFMO on breast cancer tumors
+REAR                     Fit a autoregressive model with random errors
+ano.difference           Performs a simple anova on a vector of
+                         measurement (or differences).
+design.matrix            Create the design matrix associated to the data.
+graph.curve              Graph the medians tumor volumes at each time
+                         point and for each group.
+growth.curve             Perform an anova on slopes.
+hotelling.trace          Compute the hotteling trace statistics.
+manova.estimate          Compute the mean estimates.
+manova.growth            Performs a multivariate analysis of variance for
+                         growth curve experiments.
+remove.NA                Remove the rows with missing values.
+resamp.std               Compute the standard deviation by bootstrap.
+reshape.long             Reshape the data set in a longitudinal data set
+                         in order to use the lme function.
