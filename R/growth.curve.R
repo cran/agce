@@ -1,5 +1,5 @@
 "growth.curve" <-
-function(data,C=NULL,U=NULL,normal=T,B=1000,time=NULL)
+function(data,C=NULL,U=NULL,normal=TRUE,B=1000,time=NULL)
 {
 ### Test if matrix and data.frame
   if(!is.matrix(data) && !is.data.frame(data))
@@ -49,7 +49,7 @@ function(data,C=NULL,U=NULL,normal=T,B=1000,time=NULL)
   beta<-manova.estimate(Y,X)
 
 ### Compute the standard deviations of the estimates
-  if(normal==T) # Normal assumption
+  if(normal==TRUE) # Normal assumption
     {
       ##  covarianve between the rows
       sigma.hat<-(t(Y)%*%Y-t(Y)%*%X%*%beta)/v

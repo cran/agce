@@ -1,5 +1,5 @@
 "graph.curve" <-
-function(data,time,legend=T)
+function(data,time,legend=TRUE)
 {
 ### Test if matrix and data.frame
   if(!is.matrix(data) && !is.data.frame(data))
@@ -26,7 +26,7 @@ function(data,time,legend=T)
   y<-newdata[data[,1]==lev[1],]
   for(j in 1:d)
     {
-      med[1,j]<-median(y[,j],na.rm=T)
+      med[1,j]<-median(y[,j],na.rm=TRUE)
     }
   plot(time,med[1,],xlab="time",ylab="tumor volume",type="b",pch=1,lty=1,ylim=c(m,M))
   
@@ -35,7 +35,7 @@ function(data,time,legend=T)
       y<-newdata[data[,1]==lev[i],]
       for(j in 1:d)
         {
-          med[i,j]<-median(y[,j],na.rm=T)
+          med[i,j]<-median(y[,j],na.rm=TRUE)
         }
       points(time,med[i,],pch=i,lty=i,type="b")
     }

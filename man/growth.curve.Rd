@@ -7,7 +7,7 @@
   reduces to an ANOVA when the a particular growth curve is linear.
 }
 \usage{
-growth.curve(data, C=NULL, U=NULL, normal=T, B=1000, time=NULL)
+growth.curve(data, C=NULL, U=NULL, normal=TRUE, B=1000, time=NULL)
 }
 %- maybe also `usage' for other objects documented here.
 \arguments{
@@ -48,6 +48,6 @@ growth.curve(data, C=NULL, U=NULL, normal=T, B=1000, time=NULL)
 
 \examples{
 data(Bt20)
-growth.curve(Bt20, C=NULL, U=NULL, normal=T, time=c(0,3,7,10,14,16))
+growth.curve(Bt20, C=NULL, U=NULL, normal=TRUE, time=c(0,3,7,10,14,16))
 }
 \keyword{multivariate}

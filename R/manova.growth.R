@@ -1,5 +1,5 @@
 "manova.growth" <-
-function(data,C=NULL,U=NULL,normal=T,B=1000)
+function(data,C=NULL,U=NULL,normal=TRUE,B=1000)
 {
 ### Test if matrix and data.frame
   if(!is.matrix(data) && !is.data.frame(data))
@@ -48,7 +48,7 @@ function(data,C=NULL,U=NULL,normal=T,B=1000)
 ### Estimate of the mean
   beta<-manova.estimate(Y,X)
   
-  if(normal==T) # Normal assumption
+  if(normal==TRUE) # Normal assumption
     {
       ##  covarianve between the rows
       sigma.hat<-(t(Y)%*%Y-t(Y)%*%X%*%beta)/v

@@ -7,7 +7,7 @@
   the same figure.
 }
 \usage{
-graph.curve(data, time, legend=T)
+graph.curve(data, time, legend=TRUE)
 }
 %- maybe also `usage' for other objects documented here.
 \arguments{
@@ -26,6 +26,6 @@ graph.curve(data, time, legend=T)
 
 \examples{
 data(Bt20)
-graph.curve(Bt20, c(0,3,7,10,14,16), legend=T)
+graph.curve(Bt20, c(0,3,7,10,14,16), legend=TRUE)
 }
 \keyword{multivariate}

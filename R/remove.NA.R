@@ -12,6 +12,6 @@ remove.NA<-function(data)
         if(sum(is.finite(newdata[i,]))==n2)
           index[i]<-i
       }
-    index<-index[is.finite(index)==T]
+    index<-index[is.finite(index)==TRUE]
     data[index,]
   }

@@ -9,7 +9,7 @@ initial time is specified (see initial), the anova is performed on the
 differences and rates of growth might be computed.
 }
 \usage{
-ano.difference(data, initial=NULL, final="last", C=NULL, U=NULL, normal=T, B=100, rate=T,time=NULL)
+ano.difference(data, initial=NULL, final="last", C=NULL, U=NULL, normal=TRUE, B=100, rate=TRUE,time=NULL)
 }
 %- maybe also `usage' for other objects documented here.
 \arguments{
@@ -57,7 +57,7 @@ ano.difference(data, initial=NULL, final="last", C=NULL, U=NULL, normal=T, B=100
 
 \examples{
 data(Bt20)
-ano.difference(Bt20, initial=1, final="last", C=NULL, U=NULL, normal=T, rate=T,time=c(0,3,7,10,14,16))
+ano.difference(Bt20, initial=1, final="last", C=NULL, U=NULL, normal=TRUE, rate=TRUE,time=c(0,3,7,10,14,16))
 }
 
 \keyword{univar}

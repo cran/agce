@@ -7,7 +7,7 @@
   experiments. By default we test the hypothesis of no group*time interactions.
 }
 \usage{
-manova.growth(data, C=NULL, U=NULL, normal=T, B=1000)
+manova.growth(data, C=NULL, U=NULL, normal=TRUE, B=1000)
 }
 %- maybe also `usage' for other objects documented here.
 \arguments{
@@ -44,7 +44,7 @@ manova.growth(data, C=NULL, U=NULL, normal=T, B=1000)
 
 \examples{
 data(Bt20)
-manova.growth(Bt20, C=NULL, U=NULL, normal=T)
+manova.growth(Bt20, C=NULL, U=NULL, normal=TRUE)
 }
 
 \keyword{multivariate}

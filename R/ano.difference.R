@@ -1,5 +1,5 @@
 "ano.difference" <-
-function(data,initial=NULL,final="last",C=NULL,U=NULL,normal=T,B=100,rate=T,time=NULL)
+function(data,initial=NULL,final="last",C=NULL,U=NULL,normal=TRUE,B=100,rate=TRUE,time=NULL)
   {
     
 ### Test if matrix and data.frame
@@ -59,7 +59,7 @@ function(data,initial=NULL,final="last",C=NULL,U=NULL,normal=T,B=100,rate=T,time
 ### Estimate of the mean (differences if initial=T)
     beta<-manova.estimate(Y,X)
   
-    if(normal==T) # Normal assumption
+    if(normal==TRUE) # Normal assumption
       {
         ##  covarianve between the rows
         sigma.hat<-(t(Y)%*%Y-t(Y)%*%X%*%beta)/v
@@ -73,7 +73,7 @@ function(data,initial=NULL,final="last",C=NULL,U=NULL,normal=T,B=100,rate=T,time
       std<-resamp.std(data[,1],Y,X,B=B)
 ### Compute the rate and the associated standard deviation
 ### The standard deviation are always computed by bootstrap
-    if(length(time)!=0 && length(initial)!=0 && rate==T)
+    if(length(time)!=0 && length(initial)!=0 && rate==TRUE)
       {
         rate.growth<-beta/(time[final]-time[initial])
         std.rate<-std/(time[final]-time[initial])^2
