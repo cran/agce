@@ -38,8 +38,6 @@ REAR(data,time)
   Statistical Analysis of in Vivo Tumor Growth Experiments
   Cancer Research 53:6042-6050, 1993.}
 \author{Raphael Gottardo}
-
-
 \examples{
 data(Bt20)
 REAR(Bt20,c(0,3,7,10,14,16))

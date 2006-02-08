@@ -35,5 +35,4 @@ p<-dim(X)[2]
 std<-resamp.std(Bt20[,1],Y,X,B=1000)
 
 }
-
 \keyword{multivariate}

@@ -35,8 +35,6 @@ ano.difference(data, initial=NULL, final="last", C=NULL, U=NULL, normal=TRUE, B=
     specified. }
   \item{time}{A vector of numeric values corresponding to the time
     points at which the measurements were effectued. Time is absolutely required.}
-  
-  
 }
 
 \value{
@@ -59,5 +57,4 @@ ano.difference(data, initial=NULL, final="last", C=NULL, U=NULL, normal=TRUE, B=
 data(Bt20)
 ano.difference(Bt20, initial=1, final="last", C=NULL, U=NULL, normal=TRUE, rate=TRUE,time=c(0,3,7,10,14,16))
 }
-
 \keyword{univar}
